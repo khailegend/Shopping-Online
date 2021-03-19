@@ -1,0 +1,85 @@
+.hotProducts {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+    .title {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        span {
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 25px;
+            font-family: 'Lobster', cursive;
+            color: #ff7315;
+            .icon {
+                margin-right: 5px;
+            }
+        }
+    }
+    .title:before, .title:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #ff7315;
+        margin: auto;
+    }
+
+    .product {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .slider-product {
+            position: relative;
+            .slick-track {
+                display: flex;
+                .slick-slide {
+                    padding-top: 10px;
+                }
+            }
+        }
+        .cardProduct {
+            position: relative;
+            .logoCard{
+                position: absolute;
+                z-index: 99999;
+                height: 20%;
+                right: 0;
+            }
+            &:hover {
+                box-shadow:0px -1px 8px #3a3535;
+                .btnBuy {
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+                .shoseSize {
+                    display: none;
+                }
+                .listSize {
+                    display: block;
+                }
+            }
+            outline: none;
+            max-width: 220px;
+            .cardMedia {
+                background-size: contain;
+                height: 100px;
+                padding-top: 55.25%;
+            }
+            .listSize {
+                display: none;
+            }
+            .price {
+                color: red;
+            }
+            .btnBuy {
+                margin: auto;
+                background-color: #ff7315;
+                color: white;
+                width: 100%;
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.bannerHome {
+    .MuiMobileStepper-root {
+        padding: 0 0 8px 0;
+        .MuiMobileStepper-dotActive {
+            background-color: #ff7315;
+        }
+        .MuiButtonBase-root {
+            color: #ff7315;
+            path {
+                height: 20px;
+            }
+        }
+    }
+}

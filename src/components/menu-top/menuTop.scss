@@ -1,0 +1,79 @@
+$secondary: #3a3535;
+$primary: #ff7315;
+.menuHeader {
+    .makeStyles-appBar-4 {
+        .makeStyles-menuContact-2 {
+            background-color: $secondary;
+            .hide {
+                display: none;
+            }
+            .list-menu {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                list-style: none;
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-end;
+                align-content: center;
+                .menu-item {
+                    padding: 0 20px 2px 20px ;
+                    a {
+                        font-size: 12px;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                .menu-item:hover {
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+        }   
+        .MuiContainer-root {   
+            .MuiToolbar-root {
+                background-color: white;
+            }
+        }
+
+        .makeStyles-menuTab-3 {
+            color: #3a3535;
+            min-height: 0;
+            .tabItem {
+                font-weight:700;
+                padding: 0;
+            }
+            .tabItem:hover {
+                color: $primary;
+            }
+
+            .MuiTabs-flexContainer {
+        
+                .MuiButtonBase-root {
+                    min-height: 30px;
+                    .MuiTab-wrapper {
+                        font-family: 'Poppins', sans-serif
+                    }
+                }      
+                .Mui-selected {
+                    color: $primary;
+                }
+            }
+            .MuiTabs-indicator {
+                background-color: $primary;
+                bottom: 0;
+            }
+        }
+        .makeStyles-sectionDesktop-14 {
+            .MuiBadge-badge {
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+
+    .MuiButtonBase-root.MuiFab-root {
+        background-color: $primary;
+        color: white;
+    }
+}
